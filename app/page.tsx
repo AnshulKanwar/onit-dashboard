@@ -1,3 +1,9 @@
+import Kpis from "@/components/kpis";
+
 export default function Home() {
-  return <main>OniT Partners</main>;
+  return (
+    <main className="p-8">
+      <Kpis />
+    </main>
+  );
 }
