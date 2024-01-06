@@ -18,7 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }}
         className="h-full items-stretch"
       >
-        <ResizablePanel defaultSize={25} minSize={15} maxSize={30}>
+        <ResizablePanel defaultSize={30} minSize={25} maxSize={40}>
           <SideNav />
         </ResizablePanel>
         <ResizableHandle />
