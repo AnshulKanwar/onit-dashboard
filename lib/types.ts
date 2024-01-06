@@ -1,6 +1,7 @@
 export enum Status {
   Assigned = "Assigned",
   Pending = "Pending",
+  Completed = "Completed",
 }
 
 export type Service = {
