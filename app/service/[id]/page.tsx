@@ -1,4 +1,4 @@
-import DetailCards from "@/components/ui/services/detail-cards";
+import DetailCards from "@/components/services/detail-cards";
 import { services } from "@/lib/data";
 import { notFound } from "next/navigation";
 

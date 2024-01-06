@@ -4,7 +4,7 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
-import SideNav from "@/components/ui/services/side-nav";
+import SideNav from "@/components/services/side-nav";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,7 +1,7 @@
 import StatusPill from "@/components/status";
 import { services } from "@/lib/data";
 import { cn } from "@/lib/utils";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { Service, Status } from "@/lib/types";
 import Link from "next/link";
 
@@ -44,13 +44,13 @@ function NavList({ services }: { services: Service[] }) {
       {services.map(({ id, problem, status, address }) => (
         <Link
           key={id}
-          href={`/services/${id}`}
+          href={`/service/${id}`}
           className="border p-3 rounded-lg hover:bg-accent"
         >
           <div className="flex flex-col gap-3">
             <div className="flex gap-3 justify-between items-center">
               <span className="text-sm">{problem}</span>
-              <StatusPill status={status} size="small" />
+              <StatusPill status={status} />
             </div>
             <span className="text-muted-foreground text-xs">{address}</span>
           </div>
