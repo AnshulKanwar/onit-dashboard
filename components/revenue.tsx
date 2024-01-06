@@ -1,26 +1,12 @@
 "use client";
 import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-
-const revenueData = [
-  { name: "Jan", value: "12300" },
-  { name: "Feb", value: "18100" },
-  { name: "Mar", value: "20900" },
-  { name: "Apr", value: "18100" },
-  { name: "May", value: "21100" },
-  { name: "Jun", value: "25300" },
-  { name: "Jul", value: "24200" },
-  { name: "Aug", value: "26100" },
-  { name: "Sep", value: "31300" },
-  { name: "Oct", value: "30200" },
-  { name: "Nov", value: "32800" },
-  { name: "Dec", value: "38600" },
-];
+import { revenue } from "@/lib/data";
 
 export default function Revenue() {
   return (
     <ResponsiveContainer width="100%" height={350}>
       <LineChart
-        data={revenueData}
+        data={revenue}
         margin={{
           top: 5,
           right: 10,

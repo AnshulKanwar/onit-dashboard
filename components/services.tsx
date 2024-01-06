@@ -8,34 +8,7 @@ import {
   TableRow,
 } from "./ui/table";
 import StatusPill from "./status";
-
-const services: Service[] = [
-  {
-    id: 1,
-    problem: "Plumbing leak",
-    status: Status.Assigned,
-  },
-  {
-    id: 2,
-    problem: "Wi-Fi outage",
-    status: Status.Assigned,
-  },
-  {
-    id: 3,
-    problem: "Pests infestation",
-    status: Status.Pending,
-  },
-  {
-    id: 4,
-    problem: "Broken washing machine",
-    status: Status.Assigned,
-  },
-  {
-    id: 5,
-    problem: "Clogged drain",
-    status: Status.Pending,
-  },
-];
+import { services } from "@/lib/data";
 
 export default function Services() {
   return (
@@ -49,7 +22,7 @@ export default function Services() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {services.map(({ id, problem, status }) => (
+          {services.slice(0, 5).map(({ id, problem, status }) => (
             <TableRow key={id}>
               <TableCell>{id}</TableCell>
               <TableCell>{problem}</TableCell>

@@ -1,23 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const kpis = [
-  {
-    name: "Revenue",
-    value: "₹38,600",
-  },
-  {
-    name: "Requests available",
-    value: 12,
-  },
-  {
-    name: "Requests pending",
-    value: 4,
-  },
-  {
-    name: "Requests completed",
-    value: 46,
-  },
-];
+import { kpis } from "@/lib/data";
 
 export default function Kpis() {
   return (
