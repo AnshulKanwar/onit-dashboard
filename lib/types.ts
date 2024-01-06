@@ -9,6 +9,7 @@ export type Service = {
   date: string;
   problem: string;
   status: Status;
+  rating?: number;
   technician?: string;
   price: number;
   address: string;
