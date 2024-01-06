@@ -30,6 +30,11 @@ const services: Service[] = [
     problem: "Broken washing machine",
     status: Status.Assigned,
   },
+  {
+    id: 5,
+    problem: "Clogged drain",
+    status: Status.Pending,
+  },
 ];
 
 export default function Services() {
