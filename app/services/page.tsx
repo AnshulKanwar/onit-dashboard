@@ -1,3 +1,7 @@
 export default function Page() {
-  return <main>Service</main>;
+  return (
+    <main>
+      <h2>Select a service</h2>
+    </main>
+  );
 }

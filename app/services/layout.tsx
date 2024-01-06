@@ -22,7 +22,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <SideNav />
         </ResizablePanel>
         <ResizableHandle />
-        <ResizablePanel defaultSize={75}>{children}</ResizablePanel>
+        <ResizablePanel defaultSize={75} className="p-8">
+          {children}
+        </ResizablePanel>
       </ResizablePanelGroup>
     </div>
   );

@@ -3,6 +3,7 @@ import { services } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../tabs";
 import { Service, Status } from "@/lib/types";
+import Link from "next/link";
 
 export default function SideNav() {
   return (
@@ -41,7 +42,11 @@ function NavList({ services }: { services: Service[] }) {
   return (
     <nav className="flex flex-col gap-3">
       {services.map(({ id, problem, status, address }) => (
-        <div key={id} className="border p-3 rounded-lg hover:bg-accent">
+        <Link
+          key={id}
+          href={`/services/${id}`}
+          className="border p-3 rounded-lg hover:bg-accent"
+        >
           <div className="flex flex-col gap-3">
             <div className="flex gap-3 justify-between items-center">
               <span className="text-sm">{problem}</span>
@@ -49,7 +54,7 @@ function NavList({ services }: { services: Service[] }) {
             </div>
             <span className="text-muted-foreground text-xs">{address}</span>
           </div>
-        </div>
+        </Link>
       ))}
     </nav>
   );
