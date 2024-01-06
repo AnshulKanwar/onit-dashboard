@@ -1,7 +1,9 @@
 export default function Nav() {
   return (
-    <header className="px-12 py-10">
-      <span className="text-3xl font-bold">OniT</span>
+    <header className="border-b">
+      <div className="flex items-center px-12 h-20">
+        <span className="text-2xl font-semibold">OniT</span>
+      </div>
     </header>
   );
 }

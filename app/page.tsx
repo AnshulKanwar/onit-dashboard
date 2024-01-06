@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="p-8">
       <Kpis />
-      <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+      <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         <Card className="col-span-4">
           <CardHeader>
             <CardTitle>Revenue</CardTitle>
