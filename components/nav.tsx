@@ -10,7 +10,7 @@ export default function Nav() {
           </Link>
           <div className="flex gap-5">
             <Link
-              href="/services"
+              href="/service"
               className="text-muted-foreground hover:text-primary"
             >
               Services
