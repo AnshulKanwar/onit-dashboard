@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const kpis = [
   {
     name: "Revenue",
-    value: "₹32,360",
+    value: "₹38,600",
   },
   {
     name: "Requests available",

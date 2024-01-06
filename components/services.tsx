@@ -8,7 +8,6 @@ import {
   TableRow,
 } from "./ui/table";
 import StatusPill from "./status";
-import { Button } from "./ui/button";
 
 const services: Service[] = [
   {
@@ -42,7 +41,6 @@ export default function Services() {
             <TableHead>Id</TableHead>
             <TableHead>Problem</TableHead>
             <TableHead>Status</TableHead>
-            <TableHead className="w-40"></TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -52,9 +50,6 @@ export default function Services() {
               <TableCell>{problem}</TableCell>
               <TableCell>
                 <StatusPill status={status} />
-              </TableCell>
-              <TableCell>
-                {status === Status.Pending && <Button>Assign</Button>}
               </TableCell>
             </TableRow>
           ))}
