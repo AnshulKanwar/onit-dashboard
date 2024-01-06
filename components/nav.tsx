@@ -1,5 +1,6 @@
 import { CircleUserRound } from "lucide-react";
 import Link from "next/link";
+import RequestsDrawer from "./requests-drawer";
 
 export default function Nav() {
   return (
@@ -16,6 +17,7 @@ export default function Nav() {
             >
               Services
             </Link>
+            <RequestsDrawer />
           </div>
         </div>
         <div>
