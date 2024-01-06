@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function SideNav() {
   return (
-    <div className="p-4 pt-0">
+    <div className="px-4 pt-4 h-full overflow-y-scroll">
       <Tabs defaultValue="all">
         <TabsList className="w-full justify-stretch">
           <TabsTrigger value="all" className="flex-1">

@@ -8,7 +8,7 @@ import SideNav from "@/components/ui/services/side-nav";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="px-8 pt-8">
+    <div className="px-4 h-[calc(100vh-5rem)]">
       <ResizablePanelGroup
         direction="horizontal"
         onLayout={(sizes: number[]) => {
