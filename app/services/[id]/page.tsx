@@ -11,6 +11,7 @@ import {
 import { services } from "@/lib/data";
 import { Status } from "@/lib/types";
 import { formatDistanceToNow } from "date-fns";
+import { HardHat, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export default function Page({ params: { id } }: { params: { id: string } }) {
@@ -31,7 +32,10 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
               {`${formatDistanceToNow(new Date(service.date))} ago`}
             </CardDescription>
           </CardHeader>
-          <CardContent>{service.address}</CardContent>
+          <CardContent className="flex items-center">
+            <MapPin className="mr-2 w-5 h-5" />
+            {service.address}
+          </CardContent>
           <CardFooter className="font-semibold text-lg">
             ₹{service.price}
           </CardFooter>
@@ -46,7 +50,10 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
           <CardFooter>
             {service.status === Status.Assigned ? (
               <>
-                <span>{service.technician!}</span>
+                <span className="flex items-center">
+                  <HardHat className="mr-2 w-5 h-5" />
+                  {service.technician!}
+                </span>
                 <Button className="ml-auto w-24">Reassign</Button>
               </>
             ) : (
